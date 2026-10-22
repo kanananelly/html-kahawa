@@ -1,0 +1,178 @@
+/* =====================================================================
+   inTEN Web Programming · CSS Practice: Kahawa House
+
+   YOUR MISSION
+   index.html is finished, but it has no style. Write CSS in THIS file
+   until your page looks like the picture target-desktop.png.
+
+   HOW TO WORK
+   1. Open index.html with Live Server.
+   2. Open target-desktop.png next to it so you can compare.
+   3. Do the tasks IN ORDER. Save (Ctrl + S) after each one and check.
+   4. Do NOT change index.html. Everything happens in this file.
+
+   COLOURS TO USE (copy them exactly)
+     Dark coffee   #4b2e1e   header, footer, headings
+     Caramel       #c8803e   hero background, prices, about border
+     Cream         #fdf8f3   page background
+     Light brown   #f3e6d8   about box background
+     Pale gold     #f3d9b1   nav links, footer text
+     Card border   #e6d5c3
+     Text          #333333
+
+   FONTS
+     Headings:  Georgia, "Times New Roman", serif
+     Body text: Arial, Helvetica, sans-serif
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   TASK 1 · The whole page (body)                              (5 min)
+   - Remove the white gap around the page:   margin: 0;
+   - Font:             Arial (see FONTS above)
+   - Background:       cream
+   - Text colour:      #333333
+   - Line height:      1.6
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 2 · Header bar (header and .logo)                      (8 min)
+   header:
+   - Background dark coffee, text white
+   - Padding: 20px top and bottom, 40px left and right
+   - Put the logo and the menu on ONE line, logo on the left and menu
+     on the right:
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+   .logo:
+   - margin 0, Georgia font, font-size 28px
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 3 · Navigation links in a row (nav ul and nav a)      (8 min)
+   nav ul:
+   - Remove the bullet points:  list-style: none;
+   - margin 0 and padding 0
+   - Make the links sit side by side:  display: flex;
+   - Space between links:  gap: 24px;
+   nav a:
+   - Colour pale gold, no underline, bold
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 4 · Hero section (.hero, .hero h2, .hero p)           (8 min)
+   .hero:
+   - Background caramel, text white, centred text
+   - Padding: 60px top and bottom, 20px left and right
+   .hero h2:
+   - Georgia font, font-size 40px
+   - margin: 0 0 10px 0;   (only a gap underneath)
+   .hero p:
+   - font-size 18px, margin 0
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 5 · The button (.button)                               (8 min)
+   - display: inline-block;   (so padding and margin work on a link)
+   - Gap above it: 24px
+   - Padding: 12px top and bottom, 28px left and right
+   - Background white, text dark coffee, bold, no underline
+   - Rounded ends:  border-radius: 30px;
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 6 · Centre the main content (main and main h2)        (5 min)
+   main:
+   - Maximum width 1000px
+   - Centre it with:  margin: 40px auto;
+   - Padding: 0 top and bottom, 20px left and right
+   main h2:
+   - Georgia font, dark coffee, centred, font-size 30px
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 7 · Menu cards: the box model (.card, .card h3, .price)  (10 min)
+   .card:
+   - Background white
+   - Border: 1px solid, card border colour
+   - Rounded corners: 10px
+   - Padding: 20px
+   - Shadow:  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   .card h3:
+   - No space above (margin-top: 0), dark coffee
+   .price:
+   - Caramel, bold, font-size 20px, margin-bottom 0
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 8 · Cards side by side with Flexbox (.cards and .card)  (5 min)
+   .cards:
+   - display: flex;  with a gap of 20px
+   .card:
+   - Make all three cards the same width:  flex: 1;
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 9 · About box (.about and .about h2)                   (8 min)
+   .about:
+   - Gap above it: 40px
+   - Background light brown
+   - Padding: 10px top, 30px right, 20px bottom, 30px left
+   - Rounded corners: 10px
+   - A thick caramel line on the LEFT only:
+         border-left: 6px solid #c8803e;
+   .about h2:
+   - Left-aligned (it is centred by Task 6, so undo that here)
+   --------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------
+   TASK 10 · Footer (footer and footer p)                      (5 min)
+   footer:
+   - Background dark coffee, text pale gold
+   - Centred text, padding 20px, font-size 14px
+   footer p:
+   - margin: 4px 0;
+   --------------------------------------------------------------------- */
+
+
+
+/* =====================================================================
+   STRETCH TASKS (fast finishers)
+
+   STRETCH A · Hover effects
+   - nav a:hover       → text turns white and underlined
+   - .button:hover     → background dark coffee, text white
+   - .card:hover       → lifts up a little:
+                           transform: translateY(-4px);
+                           box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+   STRETCH B · Make it work on phones (look at target-mobile.png)
+   Write a media query for screens 700px wide or smaller:
+       @media (max-width: 700px) {  ...your rules here...  }
+   Inside it:
+   - header: stack logo and menu (flex-direction: column), gap 10px,
+     padding 20px
+   - nav ul: gap 16px
+   - .hero h2: font-size 28px
+   - .cards: stack the cards (flex-direction: column)
+   TEST: in Chrome press F12, then Ctrl + Shift + M, and pick a phone.
+   ===================================================================== */
