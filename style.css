@@ -25,7 +25,6 @@
      Body text: Arial, Helvetica, sans-serif
    ===================================================================== */
 
-
 /* ---------------------------------------------------------------------
    TASK 1 · The whole page (body)                              (5 min)
    - Remove the white gap around the page:   margin: 0;
@@ -34,8 +33,12 @@
    - Text colour:      #333333
    - Line height:      1.6
    --------------------------------------------------------------------- */
-
-
+body {
+  background-color: #fdf8f3;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
 
 /* ---------------------------------------------------------------------
    TASK 2 · Header bar (header and .logo)                      (8 min)
@@ -50,8 +53,22 @@
    .logo:
    - margin 0, Georgia font, font-size 28px
    --------------------------------------------------------------------- */
-
-
+header {
+  background-color: #4b2e1e;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+}
 
 /* ---------------------------------------------------------------------
    TASK 3 · Navigation links in a row (nav ul and nav a)      (8 min)
@@ -63,9 +80,18 @@
    nav a:
    - Colour pale gold, no underline, bold
    --------------------------------------------------------------------- */
-
-
-
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+a {
+  color: #f3d9b1;
+  text-decoration: none;
+  font-weight: bold;
+}
 /* ---------------------------------------------------------------------
    TASK 4 · Hero section (.hero, .hero h2, .hero p)           (8 min)
    .hero:
@@ -77,9 +103,24 @@
    .hero p:
    - font-size 18px, margin 0
    --------------------------------------------------------------------- */
-
-
-
+.hero {
+  background-color: #c8803e;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+p {
+  font-size: 18px;
+  margin: 10px;
+}
 /* ---------------------------------------------------------------------
    TASK 5 · The button (.button)                               (8 min)
    - display: inline-block;   (so padding and margin work on a link)
@@ -88,9 +129,19 @@
    - Background white, text dark coffee, bold, no underline
    - Rounded ends:  border-radius: 30px;
    --------------------------------------------------------------------- */
-
-
-
+.button {
+  display: inline-block;
+  gap: 24px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
+  background-color: white;
+  color: #4b2e1e;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+}
 /* ---------------------------------------------------------------------
    TASK 6 · Centre the main content (main and main h2)        (5 min)
    main:
@@ -100,8 +151,20 @@
    main h2:
    - Georgia font, dark coffee, centred, font-size 30px
    --------------------------------------------------------------------- */
-
-
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main > h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #4b2e1e;
+  align-items: center;
+  font-size: 30px;
+}
 
 /* ---------------------------------------------------------------------
    TASK 7 · Menu cards: the box model (.card, .card h3, .price)  (10 min)
@@ -116,9 +179,24 @@
    .price:
    - Caramel, bold, font-size 20px, margin-bottom 0
    --------------------------------------------------------------------- */
-
-
-
+.card {
+  background-color: white;
+  border: 1px solid;
+  border-color: #c8803e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.card > h3 {
+  margin-top: 0;
+  color: #4b2e1e;
+}
+.price {
+  color: #f3d9b1;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
 /* ---------------------------------------------------------------------
    TASK 8 · Cards side by side with Flexbox (.cards and .card)  (5 min)
    .cards:
@@ -126,9 +204,14 @@
    .card:
    - Make all three cards the same width:  flex: 1;
    --------------------------------------------------------------------- */
-
-
-
+.cards {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  width: 100%;
+  flex: 1;
+}
 /* ---------------------------------------------------------------------
    TASK 9 · About box (.about and .about h2)                   (8 min)
    .about:
@@ -141,9 +224,19 @@
    .about h2:
    - Left-aligned (it is centred by Task 6, so undo that here)
    --------------------------------------------------------------------- */
-
-
-
+.about {
+  margin-top: 40px;
+  background-color: #f3e6d8;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border-left: 6px solid #c8803e;
+}
+.about > h2 {
+  text-align: left;
+}
 /* ---------------------------------------------------------------------
    TASK 10 · Footer (footer and footer p)                      (5 min)
    footer:
@@ -152,9 +245,16 @@
    footer p:
    - margin: 4px 0;
    --------------------------------------------------------------------- */
-
-
-
+footer {
+  background-color: #4b2e1e;
+  color: #f3d9b1;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
+footer > p {
+  margin: 4px 0;
+}
 /* =====================================================================
    STRETCH TASKS (fast finishers)
 
